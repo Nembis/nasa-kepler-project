@@ -7,6 +7,7 @@
     "server": "cd server && yarn dev",
     "watch": "cd server && yarn watch",
     "client": "cd client && yarn start",
-    "start": "yarn server & yarn client"
+    "start": "yarn server & yarn client",
+    "production": "cd client && yarn build && cd ../ && yarn server"
   }
 }

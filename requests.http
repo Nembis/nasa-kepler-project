@@ -1,0 +1,22 @@
+@hostname = http://localhost:8000
+
+
+### GET all planets
+get {{hostname}}/planets
+
+
+### GET all launches
+get {{hostname}}/launches
+
+
+###
+post {{hostname}}/launches 
+Content-Type: application/json
+
+{
+  "mission": "Mission to Mars",
+  "rocket": "Star Ship",
+  "launchDate": "February 7, 2025",
+  "destination": "Mars"
+
+}
